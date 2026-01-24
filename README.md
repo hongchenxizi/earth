@@ -5,7 +5,7 @@ export default {
         let url = new URL(request.url);
         if (url.pathname.startsWith('/')) {
             var arrStr = [
-                'change.your.domain', // 此处单引号里填写你的节点伪装域名
+                'change.your.domain', 
             ];
             url.protocol = 'https:'
             url.hostname = getRandomArray(arrStr)
